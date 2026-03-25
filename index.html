@@ -1,27 +1,153 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
   <html lang="ja">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>選考管理 - サポート</title>
     <style>
-      body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 40px auto; padding: 0
-  20px; color: #333; }
-      h1 { font-size: 24px; }
-      h2 { font-size: 18px; margin-top: 32px; }
-      p { line-height: 1.7; }
-      a { color: #2563EB; }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: -apple-system, 'Helvetica Neue', sans-serif; color: #1e293b; background:
+  #f8fafc; }
+
+      .hero {
+        background: #2563EB;
+        color: white;
+        text-align: center;
+        padding: 60px 20px 48px;
+      }
+      .hero .icon {
+        width: 80px; height: 80px;
+        background: white;
+        border-radius: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .hero .icon span {
+        font-size: 40px;
+      }
+      .hero h1 { font-size: 28px; font-weight: 800; margin-bottom: 10px; }
+      .hero p { font-size: 15px; opacity: 0.85; line-height: 1.7; }
+
+      .features {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 48px 20px;
+      }
+      .features h2 { font-size: 20px; font-weight: 800; margin-bottom: 24px; color: #1e293b; }
+      .feature-list { display: flex; flex-direction: column; gap: 16px; }
+      .feature-item {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        border: 1px solid #e2e8f0;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .feature-num {
+        background: #2563EB;
+        color: white;
+        font-size: 13px;
+        font-weight: 700;
+        width: 28px; height: 28px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .feature-text h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+      .feature-text p { font-size: 14px; color: #64748b; line-height: 1.6; }
+
+      .support {
+        background: white;
+        border-top: 1px solid #e2e8f0;
+        padding: 48px 20px;
+        text-align: center;
+      }
+      .support h2 { font-size: 20px; font-weight: 800; margin-bottom: 12px; }
+      .support p { font-size: 14px; color: #64748b; line-height: 1.7; margin-bottom: 24px; }
+      .support a.btn {
+        display: inline-block;
+        background: #2563EB;
+        color: white;
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 24px 20px;
+        font-size: 13px;
+        color: #94a3b8;
+      }
+      .footer a { color: #94a3b8; }
     </style>
   </head>
   <body>
-    <h1>選考管理 サポート</h1>
-    <p>就職活動の企業管理・選考進捗・スケジュール管理アプリ「選考管理」のサポートページです。</p>
 
-    <h2>お問い合わせ</h2>
-    <p>ご不明な点やご要望は、GitHubのIssueよりお問い合わせください。</p>
-    <p><a href="https://github.com/rt2k2/senkoukanri-app-support/issues">お問い合わせはこちら</a></p>
+    <div class="hero">
+      <div class="icon"><span>💼</span></div>
+      <h1>選考管理</h1>
+      <p>就職活動の企業管理・選考進捗・<br>スケジュール管理をこのアプリ一つで。</p>
+    </div>
 
-    <h2>プライバシーポリシー</h2>
-    <p><a href="privacy.html">プライバシーポリシーはこちら</a></p>
+    <div class="features">
+      <h2>主な機能</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feature-num">1</div>
+          <div class="feature-text">
+            <h3>企業を登録して一元管理</h3>
+            <p>企業名・業界・志望度・選考状況をまとめて管理。絞り込みや並び替えにも対応。</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">2</div>
+          <div class="feature-text">
+            <h3>選考フローをステップで管理</h3>
+            <p>書類選考・面接・内定などのステップを記録。今どの段階にいるかが一目でわかる。</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">3</div>
+          <div class="feature-text">
+            <h3>就活の予定をカレンダーで管理</h3>
+            <p>面接・説明会・ES締切などをカレンダーに登録。月表示・日表示で確認できる。</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">4</div>
+          <div class="feature-text">
+            <h3>締切前にリマインダーが届く</h3>
+            <p>登録した予定の前日にプッシュ通知でお知らせ。うっかり忘れを防ぐ。</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">5</div>
+          <div class="feature-text">
+            <h3>アプリからのお知らせを受け取る</h3>
+            <p>運営からのお知らせやリマインダーをアプリ内の通知欄でまとめて確認できる。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="support">
+      <h2>お問い合わせ</h2>
+      <p>ご不明な点やご要望は、GitHubのIssueよりお問い合わせください。</p>
+      <a class="btn"
+  href="https://github.com/rt2k2/senkoukanri-app-support/issues">お問い合わせはこちら</a>
+    </div>
+
+    <div class="footer">
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+
   </body>
   </html>
